@@ -43,3 +43,5 @@ PREFIX="!"
 ```
 
 If you already have an existing data directory, you can skip `TOKEN` and `PREFIX`.
+
+File ownership for `PUID` and `PGID` variables is autodetected from the path provided by `DATADIR`.
