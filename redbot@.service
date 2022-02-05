@@ -1,0 +1,11 @@
+[Unit]
+Description=redbot under podman running from %i
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/redbot/%i
+Environment=CONFIG=/etc/redbot/%i
+ExecStart=/usr/local/bin/redbot-launch.sh

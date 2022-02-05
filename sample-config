@@ -1,0 +1,2 @@
+DATADIR=/srv/redbot/instance
+IMAGE=<imageid>
