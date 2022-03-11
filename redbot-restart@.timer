@@ -1,0 +1,9 @@
+[Unit]
+Description=auto-restart redbot under podman running from %i
+
+[Install]
+WantedBy=multi-user.target
+
+[Timer]
+Unit=redbot-restart@%i.service
+OnCalendar=*-*-* 02:00:00

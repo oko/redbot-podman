@@ -25,6 +25,9 @@ sudo make install
 
 This installs a systemd service template `redbot@.service` and a launcher script under `/usr/local/bin/`.
 
+It also installs a systemd service and timer `redbot-restart@` which will restart the service at 2am daily,
+to avoid some bugs observed in long-running Redbot instances.
+
 ## Configuration
 
 Create `/etc/redbot` and copy `sample-config` from this repository to `/etc/redbot/$INSTANCENAME`:
